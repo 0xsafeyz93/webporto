@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komodor Party's</title>
+    <title>Disco Background</title>
     <style>
         body {
             margin: 0;
@@ -12,23 +12,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
             color: white;
             background: linear-gradient(45deg, red, yellow, green, cyan, blue, violet);
             background-size: 600% 600%;
-            animation: gradient 0.2s ease infinite;
+            animation: gradient 10s ease infinite;
         }
 
         @keyframes gradient {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
-         .join-us {
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .join-us {
             display: flex;
-            justify-content: center;
             align-items: center;
             margin-top: 20px;
-            font-size: 1.5em;
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         }
 
         .join-us img {
@@ -38,7 +47,7 @@
         }
 
         .join-us a {
-            color: #00f;
+            color: white;
             text-decoration: none;
             font-weight: bold;
         }
@@ -46,32 +55,13 @@
         .join-us a:hover {
             text-decoration: underline;
         }
-
-        @media (max-width: 600px) {
-            .content h1 {
-                font-size: 2.5em;
-            }
-            .join-us {
-                font-size: 1.2em;
-            }
-            .join-us img {
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        h1 {
-            font-size: 3rem;
-            text-align: center;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Komodor!</h1>
-     <div class="join-us">
-            <img src="https://via.placeholder.com/40" alt="Logo">
-            <a href="https://t.me/+LS2kmFSYPMk5MTE1">Join Us</a>
-        </div>
+    <h1>Welcome to the Disco!</h1>
+    <div class="join-us">
+        <img src="https://via.placeholder.com/40" alt="Logo">
+        <a href="https://www.example.com">Join Us</a>
+    </div>
 </body>
 </html>
