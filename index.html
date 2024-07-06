@@ -3,68 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Komodor Party's</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: 'Montserrat', sans-serif;
-            color: white;
-            background: linear-gradient(45deg, red, yellow, green, cyan, blue, violet);
-            background-size: 600% 600%;
-            animation: gradient 0.25s ease infinite;
-        }
-
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        h1 {
-            font-family: 'Lobster', cursive;
-            font-size: 3rem;
-            text-align: center;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
-
-        .join-us {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-            font-size: 1.5rem;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
-
-        .join-us img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-
-        .join-us a {
-            font-family: 'Lobster', cursive;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .join-us a:hover {
-            text-decoration: underline;
-        }
-    </style>
-     <header>
-  <img src="https://i.ibb.co.com/j3m37b4/6830721-2.png" alt="Logo Perusahaan">
+    <title>KomodoCoin</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <h1>Welcome to Komodor !</h1>
-    <div class="join-us">
-        <img src="https://i.ibb.co.com/j3m37b4/6830721-2.png" alt="Logo">
-        <a href="https://t.me/+LS2kmFSYPMk5MTE1">Join with Us</a>
-    </div>
+<body>
+    <!-- Menu Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Meme Gallery</a></li>
+                <li><a href="#dexscreener">DEX Screener</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to KomodoCoin</h1>
+        <p>The ultimate meme coin inspired by the mighty Komodo dragon!</p>
+    </section>
+
+    <!-- Meme Gallery Section -->
+    <section id="gallery">
+        <h2>Komodo Meme Gallery</h2>
+        <div class="gallery">
+            <img src="meme1.jpg" alt="Komodo Meme 1">
+            <img src="meme2.jpg" alt="Komodo Meme 2">
+            <img src="meme3.jpg" alt="Komodo Meme 3">
+            <img src="meme4.jpg" alt="Komodo Meme 4">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- DEX Screener Section -->
+    <section id="dexscreener">
+        <h2>DEX Screener</h2>
+        <iframe src="https://dexscreener.com/embedded-link" frameborder="0"></iframe>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <p>Discover the future plans for KomodoCoin:</p>
+        <ul>
+            <li>Q1 2024: Launch of KomodoCoin</li>
+            <li>Q2 2024: Listing on major exchanges</li>
+            <li>Q3 2024: Development of KomodoCoin wallet</li>
+            <li>Q4 2024: Partnerships with influencers</li>
+            <!-- Add more roadmap items as needed -->
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KomodoCoin. All rights reserved.</p>
+    </footer>
 </body>
 </html>
