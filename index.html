@@ -6,128 +6,64 @@
     <title>KomodoCoin</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            padding: 1rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url('https://uploads4.wikiart.org/images/vincent-van-gogh/the-starry-night-1889.jpg') repeat;
+            background-size: cover;
+            animation: moveBackground 30s linear infinite;
+            font-family: 'Bubblegum Sans', cursive;
         }
 
-        nav ul li {
-            margin: 0 1rem;
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
         }
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 2rem;
+        .content {
             text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
         }
 
-        h1, h2 {
+        h1 {
+            font-size: 3rem;
             color: #333;
+            margin: 0;
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #333;
-        }
-
-        iframe {
-            width: 80%;
-            height: 400px;
-            border: 0;
-        }
-
-        footer {
-            background-color: #333;
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5rem;
             color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #555;
         }
     </style>
 </head>
 <body>
-    <!-- Menu Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Meme Gallery</a></li>
-                <li><a href="#dexscreener">DEX Screener</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to KomodoCoin</h1>
-        <p>The ultimate meme coin inspired by the mighty Komodo dragon!</p>
-    </section>
-
-    <!-- Meme Gallery Section -->
-    <section id="gallery">
-        <h2>Komodo Meme Gallery</h2>
-        <div class="gallery">
-            <img src="meme1.jpg" alt="Komodo Meme 1">
-            <img src="meme2.jpg" alt="Komodo Meme 2">
-            <img src="meme3.jpg" alt="Komodo Meme 3">
-            <img src="meme4.jpg" alt="Komodo Meme 4">
-            <!-- Add more images as needed -->
-        </div>
-    </section>
-
-    <!-- DEX Screener Section -->
-    <section id="dexscreener">
-        <h2>DEX Screener</h2>
-        <iframe src="https://www.tradingview.com/x/AWxeYtws/" frameborder="0"></iframe>
-    </section>
-
-    <!-- Roadmap Section -->
-    <section id="roadmap">
-        <h2>Roadmap</h2>
-        <p>Discover the future plans for KomodoCoin:</p>
-        <ul>
-            <li>Q1 2024: Launch of KomodoCoin</li>
-            <li>Q2 2024: Listing on major exchanges</li>
-            <li>Q3 2024: Development of KomodoCoin wallet</li>
-            <li>Q4 2024: Partnerships with influencers</li>
-            <!-- Add more roadmap items as needed -->
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 KomodoCoin. All rights reserved.</p>
-    </footer>
+    <div class="content">
+        <h1>BUY KOMODO NOW!!</h1>
+        <a href="https://www.yourlink.com" class="button">Click Here</a>
+    </div>
 </body>
 </html>
